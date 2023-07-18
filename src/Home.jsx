@@ -58,7 +58,7 @@ const Home= () => {
         </Slide>
        </div>
        
-       <div className='flex-1 flex justify-center mt-[-80px] sm:mt-20 '>
+       <div className='flex-1 flex justify-center mt-[-70px] sm:mt-20 '>
         <Slide direction='right'>
         <img className="animate-me w-[300px] transition transform ease-in-out hover:translate-y-[-10px] sm:h-[300px] object-contain border-8 border-transparent bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%" src={pic} alt='me'/>
         </Slide>

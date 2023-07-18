@@ -10,11 +10,11 @@ const Contact = () => {
                <h1 className='text-sm sm:text-2xl py-5 sm:py-8'>Contact</h1>
                </div>
             </Zoom>
-        <div className="flex sm:flex-row flex-col gap-5 pb-15">
+        <div className="flex sm:flex-row flex-col gap-4 pb-15">
         <div className="flex flex-col gap-5 flex-1 border p-3">
            <div className="">
            <span className="text-lg font-bold">Address:   </span>
-            <span className=" font-thin">Batasan Hills, Quezon City</span>
+            <span className=" ">Batasan Hills, Quezon City</span>
            </div>
            <div className="">
            <span className="text-lg font-bold">Contact no.:   </span>
@@ -37,6 +37,7 @@ const Contact = () => {
            <div className="">
            <textarea placeholder='Message...' className='text-black border bg-slate-400 outline-none placeholder:text-slate-300 placeholder:italic p-2 w-full' name="" id="" ></textarea>
            </div>
+                <button className='w-full sm:w-[25%] bg-blue-600 rounded-sm text-sm h-8'>Send</button>
             </div>
         </div>
     </div>

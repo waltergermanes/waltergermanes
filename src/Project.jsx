@@ -32,7 +32,7 @@ const Project = () => {
                 </div>
             <div className="w-full sm:w-[50%] p-3">
               <span className='text-sm sm:text-xl'>E-commerce Website</span>
-              <div className=" flex flex-wrap gap-1 sm:gap-4 text-[10px] sm:text-xs mt-2">
+              <div className=" flex flex-wrap gap-1 sm:gap-2 text-xs sm:text-sm mt-2">
                 <span className='bg-transparent border p-1 rounded-sm'>React</span>
                 <span className='bg-transparent border p-1 rounded-sm'>Redux Toolkit</span>
                 <span className='bg-transparent border p-1 rounded-sm'>NodeJS</span>
