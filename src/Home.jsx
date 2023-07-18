@@ -8,9 +8,9 @@ const Home= () => {
   return (
     <>
     
-    <div className='text-slate-800 dark:text-slate-200 min-h-screen sm:min-h-screen flex flex-col sm:flex-row justify-between items-center px-5 lg:px-32 mt-20 sm:mt-[-30px]'>
+    <div className='text-slate-800 dark:text-slate-200 min-h-screen sm:min-h-screen flex flex-col sm:flex-row justify-between items-center px-5 lg:px-32 mt-10 sm:mt-[-30px]'>
      
-       <div className='flex-1 flex flex-col gap-10 sm:gap-5'>
+       <div className='flex-1 flex flex-col gap-5'>
        <Slide direction='left'>
        <span>Hello, I'm<span className='text-sm sm:text-xl'> Walter Germanes</span></span>
         <Typed
@@ -60,7 +60,7 @@ const Home= () => {
        
        <div className='flex-1 flex justify-center'>
         <Slide direction='right'>
-        <img className="mt-[-100px] sm:mt-0 animate-me w-[300px] transition transform ease-in-out hover:translate-y-[-10px] sm:h-[300px] object-contain border-8 border-transparent bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%" src={pic} alt='me'/>
+        <img className="animate-me w-[300px] transition transform ease-in-out hover:translate-y-[-10px] sm:h-[300px] object-contain border-8 border-transparent bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%" src={pic} alt='me'/>
         </Slide>
       </div>
         
