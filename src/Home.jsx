@@ -10,9 +10,9 @@ const Home= () => {
     
     <div className='text-slate-800 dark:text-slate-200 min-h-screen sm:min-h-screen flex flex-col sm:flex-row justify-between items-center px-5 lg:px-32 '>
      
-       <div className='flex-1 flex flex-col gap-5 mt-36 sm:mt-20 '>
+       <div className='flex-1 flex flex-col gap-5 mt-28 sm:mt-20 '>
        <Slide direction='left'>
-       <span>Hello, I'm<span className='text-sm sm:text-xl'> Walter Germanes</span></span>
+       <span>Hello, I'm<span className='text-xl'> Walter Germanes</span></span>
         <Typed
                 className='text-xl font-extrabold sm:text-xl md:text-xl text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%'
                 strings={[
