@@ -13,13 +13,11 @@ function App() {
   const [open, setOpen] = useState(false)
   const [darkMode, setDarkMode] = useState(true)
   return (
-    <div id='home' className={darkMode ? 'dark' : ''}>
-      <div className=' scroll-smooth'>
+    <div id='home' className={darkMode ? 'dark scroll-smooth' : ' scroll-smooth'}>
      <div className="bg-slate-100 text-slate-950 dark:text-gray-200 dark:bg-[#25273C] ">
-     <Slide direction='down'>
-     <div className=' w-full pt-5 sm:pt-10 p-5 lg:px-32 flex justify-between items-center'>
+         <div className='z-10 fixed top-0 backdrop-blur-lg w-full h-[70px] border-b px-5 lg:px-32 flex justify-between items-center'>
           <a href='#home' className='font-extrabold cursor-pointer'>Walter Germanes</a>
-          <ul className='sm:flex justify-end gap-6 items-center font-extrabold hidden'>
+          <ul className='sm:flex justify-end gap-6 items-center font-bold hidden'>
             <li className='hover:from-pink-500 hover:to-yellow-500'><a href='#about'>About me</a></li>
             <li ><a href='#skills'>My Skills</a></li>
             <li ><a href='#projects'>Projects</a></li>
@@ -35,14 +33,12 @@ function App() {
             : <span onClick={()=> setOpen(!open)} className='duration-500 transform transition ease-in-out cursor-pointer sm:hidden'><Menu fontSize='large'/></span>
         }
       </div>
-      </Slide>
         <Home/>
      </div>
        <About/>
        <Skills/>
        <Project/>
        <Contact/>
-    </div>
     </div>
   )
 }
