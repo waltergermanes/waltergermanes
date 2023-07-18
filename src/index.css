@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  font-family: 'Secular One', sans-serif;
+  scroll-behavior: smooth;
+  scroll-padding: 7rem;
+}
+.ss{
+clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+}
+.icon{
+ clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
+
+
+:root{
+  --lighter: linear-gradient(159deg, rgb(45, 45, 58) 0%, rgb(43, 43, 53) 100%);
+  ---background: #191923;
+}
+
+body{
+  width: 100%;
+  background-color: var(---background);
+  color: #fff;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.green {
+  color: #01be96;
+}
+
+.slick-list, .slick-slider, .slick-track{
+  padding: 1rem 0;
+}
+
+.center .slick-center .project{
+  transform: scale(1.3);
+  z-index: 10000;
+  transition: all 400ms ease-in-out;
+  pointer-events: all;
+  opacity: 1;
+}
+
+.center .project{
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+@media(max-width: 990px){
+  .center .slick-center .project{
+    transform: scale(1);
+  }
+
+  .center .project{
+    opacity: 1;
+    pointer-events: all;
+  }
+}
+
+
+/* scroll bar style  */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 50px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+@keyframes header {
+  0%{
+    transform: translateY(-30px);
+    opacity: 0;
+  } 
+  100%{
+    transform: translateY(0);
+      opacity: 1;
+  }
+}
+.s:nth-child(odd){
+display: flex;
+flex-direction: row-reverse;
+}
