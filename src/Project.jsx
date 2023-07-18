@@ -26,29 +26,25 @@ const Project = () => {
         {
           text.map((t, i)=>(
           
-             <div key={i} className="flex  even:flex-row-reverse gap-2 sm:gap-5 ">
-            <div className="w-[50%]">
-              <Slide direction={i % 2 === 1 ? 'left' : 'right'}>
+             <div key={i} className="flex flex-col sm:odd:flex-row sm:even:flex-row-reverse gap-2 sm:gap-5 ">
+            <div className="w-full sm:w-[50%]">
               <img src={pic} alt="" className='w-full h-full  sm:w-[100%] object-cover' />
-              </Slide>
                 </div>
-            <div className="w-[50%] p-3">
-            <Slide direction={i % 2 === 1 ? 'left' : 'right'}>
+            <div className="w-full sm:w-[50%] p-3">
               <span className='text-sm sm:text-xl'>E-commerce Website</span>
               <div className=" flex flex-wrap gap-1 sm:gap-4 text-[10px] sm:text-xs mt-2">
-                <span className='bg-emerald-500 p-1 rounded-xl'>React</span>
-                <span className='bg-emerald-500 p-1 rounded-xl'>Redux Toolkit</span>
-                <span className='bg-emerald-500 p-1 rounded-xl'>NodeJS</span>
-                <span className='bg-emerald-500 p-1 rounded-xl'>ExpressJS</span>
-                <span className='bg-emerald-500 p-1 rounded-xl'>MySql</span>
-                <span className='bg-emerald-500 p-1 rounded-xl'>Sequelize</span>
+                <span className='bg-transparent border p-1 rounded-sm'>React</span>
+                <span className='bg-transparent border p-1 rounded-sm'>Redux Toolkit</span>
+                <span className='bg-transparent border p-1 rounded-sm'>NodeJS</span>
+                <span className='bg-transparent border p-1 rounded-sm'>ExpressJS</span>
+                <span className='bg-transparent border p-1 rounded-sm'>MySql</span>
+                <span className='bg-transparent border p-1 rounded-sm'>Sequelize</span>
               </div>
               <span className='text-sm'>Description</span>
               <div className="flex gap-2 mt-3">
                 <button className='w-full sm:w-[25%] bg-red-500 rounded-sm text-sm h-8'>Demo</button>
                 <button className='w-full sm:w-[25%] bg-teal-500 rounded-sm text-sm h-8'>View Code</button>
               </div>
-              </Slide>
             </div>
            
           </div>

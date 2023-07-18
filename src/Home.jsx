@@ -10,7 +10,7 @@ const Home= () => {
     
     <div className='text-slate-800 dark:text-slate-200 min-h-screen sm:min-h-screen flex flex-col sm:flex-row justify-between items-center px-5 lg:px-32 '>
      
-       <div className='flex-1 flex flex-col gap-5 mt-20 '>
+       <div className='flex-1 flex flex-col gap-5 mt-36 sm:mt-20 '>
        <Slide direction='left'>
        <span>Hello, I'm<span className='text-sm sm:text-xl'> Walter Germanes</span></span>
         <Typed
@@ -23,7 +23,7 @@ const Home= () => {
                    
                 </Typed>
                
-        <span className='leading-6 font-extralight text-sm sm:text-base '> I'm a Full Stack Developer specializing building 
+        <span className='leading-6 text-base '> I'm a Full Stack Developer specializing building 
         web apps, I enjoy building everything from small websites to rich interactive web apps.
         Besides from Web Development, I also passionate to create realistic portraits
         </span>
@@ -58,7 +58,7 @@ const Home= () => {
         </Slide>
        </div>
        
-       <div className='flex-1 flex justify-center mt-20 '>
+       <div className='flex-1 flex justify-center mt-[-80px] sm:mt-20 '>
         <Slide direction='right'>
         <img className="animate-me w-[300px] transition transform ease-in-out hover:translate-y-[-10px] sm:h-[300px] object-contain border-8 border-transparent bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%" src={pic} alt='me'/>
         </Slide>

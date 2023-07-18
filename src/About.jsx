@@ -10,20 +10,27 @@ const About = () => {
             </Zoom>
         <div className='gap-3 sm:h-[300px] flex flex-col sm:flex-row'>
             <div className="w-full sm:w-1/3">
-                <Slide direction='left'>
+                <Slide direction='down'>
                     <div className="bg-slate-300 dark:bg-[#25273C] text-slate-900 dark:text-slate-50 h-[180px] sm:h-[300px] rounded-lg flex items-center justify-center transform transition ease-in-out hover:translate-y-[-10px]">
                         <img src={MyPic} className='ss w-[170px] h-[170px] sm:w-[250px] sm:h-[250px] object-contain col-span-1 rounded-md' alt='me'/>
                     </div>
                 </Slide>
             </div>
        <div className="w-full sm:w-2/3">
-        <Slide direction='right'>
+        <Slide direction='up'>
         <div className="bg-slate-300 h-[350px] dark:bg-[#25273C] text-slate-900 dark:text-slate-50 px-5 pb-7 pt-4 sm:h-[300px] transform transition ease-in-out hover:translate-y-[-10px]">
             <span>Education</span>
             <div className="h-full text-xs sm:text-sm  flex justify-between py-4">
-                <div className="w-[46%] flex flex-col justify-between">
-                    <div className=" flex justify-center gap-3 items-center h-20 w-[90%] bg-slate-400 rounded pr-3">
-                        <div className="  h-10 w-10 bg-blue-800">
+            <div className="w-[10%]">
+            <div className="flex flex-col justify-around h-full w-1 bg-slate-200">
+               <div className='ml-[-8px] h-5 w-5 rounded-full bg-teal-500 border-2'></div>
+               <div className='ml-[-8px] h-5 w-5 rounded-full bg-blue-500 border-2'></div>
+               <div className='ml-[-8px] h-5 w-5 rounded-full bg-orange-500 border-2'></div>
+            </div>
+            </div>
+                <div className="w-[90%] flex flex-col justify-between gap-3">
+                    <div className="flex-1 flex justify-center gap-3 items-center bg-slate-400 rounded pr-3">
+                        <div className=" flex items-center justify-center h-10 w-10 bg-blue-800">
                             <span>2022</span>
                         </div>
                         <div className="flex flex-col justify-center">
@@ -31,8 +38,18 @@ const About = () => {
                             <span className='text-xs'>BS Information Technology</span>
                         </div>
                     </div>
-                    <div className=" flex  justify-center gap-3 items-center h-20 w-[90%] bg-slate-400 rounded pr-1">
-                        <div className="  h-10 w-10 bg-blue-500">
+                    
+                    <div className="flex-1  flex justify-center gap-3 items-center bg-slate-400 rounded pr-3">
+                        <div className="flex items-center justify-center  h-10 w-10 bg-blue-700">
+                            <span>2018</span>
+                        </div>
+                        <div className="flex flex-col justify-center">
+                            <span>Mary the Queeen College</span>
+                            <span className='text-xs'>Senior High School(ICT)</span>
+                        </div>
+                    </div>
+                    <div className="flex-1  flex  justify-center gap-3 items-center  bg-slate-400 rounded pr-1">
+                        <div className="flex items-center justify-center  h-10 w-10 bg-blue-500">
                             <span>2015</span>
                         </div>
                         <div className="flex flex-col justify-center">
@@ -41,31 +58,15 @@ const About = () => {
                         </div>
                     </div>
                 </div>
-        <div className="w-[8%]">
-            <div className="flex flex-col justify-around h-full w-1 bg-slate-200">
-               <div className='ml-[-8px] h-5 w-5 rounded-full bg-teal-500 border-2'></div>
-               <div className='ml-[-8px] h-5 w-5 rounded-full bg-blue-500 border-2'></div>
-               <div className='ml-[-8px] h-5 w-5 rounded-full bg-orange-500 border-2'></div>
-            </div>
-        </div>
-        <div className="w-[46%] flex flex-col justify-center">
-            <div className=" flex justify-center gap-3 items-center h-20 w-[100%] bg-slate-400 rounded pr-3">
-                <div className="  h-10 w-10 bg-blue-700">
-                    <span>2018</span>
-                </div>
-                <div className="flex flex-col justify-center">
-                    <span>Mary the Queeen College</span>
-                    <span className='text-xs'>Senior High School(ICT)</span>
-                </div>
-            </div>
-        </div>
+       
+       
     </div>
     </div>
     </Slide>
     </div>
-    </div>
-    </div>
-    )
+        </div>
+        </div>
+      )
 }
 
 export default About
