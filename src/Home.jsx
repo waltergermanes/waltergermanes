@@ -16,14 +16,14 @@ const Home= () => {
         <Typed
                 className='text-xl sm:text-xl md:text-xl text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%'
                 strings={[
-                    'Web Developer and Graphite Artist']}
+                    'Web Developer and Web Designer']}
                     typeSpeed={40}
                     backSpeed={50}
                     loop >
                    
                 </Typed>
                
-        <span className='leading-8 font-extralight text-md '> I'm a Full Stack Developer specializing building 
+        <span className='leading-6 font-extralight text-sm sm:text-md '> I'm a Full Stack Developer specializing building 
         web apps, I enjoy building everything from small websites to rich interactive web apps.
         Besides from Web Development, I also passionate to create realistic portraits
         </span>
@@ -58,7 +58,7 @@ const Home= () => {
         </Slide>
        </div>
        
-       <div className='flex-1 flex justify-center'>
+       <div className='mt-[-50px] sm:mt-0 flex-1 flex justify-center'>
         <Slide direction='right'>
         <img className="animate-me w-[300px] transition transform ease-in-out hover:translate-y-[-10px] sm:h-[300px] object-contain border-8 border-transparent bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%" src={pic} alt='me'/>
         </Slide>
