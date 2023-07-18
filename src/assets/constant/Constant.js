@@ -1,5 +1,4 @@
-//import {BsLinkedin, BsGithub , BsEnvelope, BsFacebook} from 'react-icons/bs'
-import { LinkedIn, GitHub, Mail, Facebook, Instagram } from '@mui/icons-material'
+
 import htmlLogo from '../images/icons8-html-5.svg'
 import cssLogo from '../images/icons8-css3.svg'
 import jsLogo from '../images/icons8-javascript.svg'
@@ -104,25 +103,3 @@ export const mySkills = [
       style:'shadow-green-500'
     },
   ]
-
-  export const Social= [
-  {
-    id: '1',
-     icon: LinkedIn,
-  },
-  {
-    id: '2',
-    icon: GitHub,
-  },
-  {
-    id: '3',
-    icon: Mail,
-  },
-  {
-    id: '4',
-    icon: Facebook,
-  },  {
-    id: '5',
-    icon: Instagram,
-  }
-]

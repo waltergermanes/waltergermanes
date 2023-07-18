@@ -10,10 +10,10 @@ const Skills = () => {
         </Zoom>
        <div className='gap-4 grid-cols-3 grid md:grid-cols-5'>
           {
-            mySkills.map(skill=>{
+            mySkills.map((skill, i)=>{
              return(
-             <Zoom>
-               <div key={skill.id} className={`flex flex-col items-center justify-center flex-1 rounded-md bg-slate-600 dark:bg-[#201F27] py-2 hover:opacity-70 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 h-30  shadow-md ${skill.style}`}>
+             <Zoom key={i}>
+               <div className={`flex flex-col items-center justify-center flex-1 rounded-md bg-slate-600 dark:bg-[#201F27] py-2 hover:opacity-70 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 h-30  shadow-md ${skill.style}`}>
                 <img src={skill.icon} className='w-[30px] sm:w-[60px]'/>
                 <h1 className='text-xs sm:text-sm'>{skill.title.toUpperCase()}</h1>
               </div>

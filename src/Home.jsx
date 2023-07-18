@@ -1,8 +1,8 @@
 import React from 'react'
 import Typed from 'react-typed'
 import pic from './assets/images/FB_IMG_1682461166590.jpg'
-import { Social } from './assets/constant/Constant'
 import { Rotate, Slide } from 'react-awesome-reveal'
+import { Facebook, GitHub, Instagram, LinkedIn, Mail } from '@mui/icons-material'
 
 const Home= () => {
   return (
@@ -29,15 +29,31 @@ const Home= () => {
         </span>
       
         <div className=' flex w-50 gap-5 '>
-          {Social.map(social=>{
-            return(
              <Rotate>
-               <a href='k' key={social.id} className='bg-blue-800 p-2 icon cursor-pointer hover:scale-105 hover:ease-in-out duration-100'>
-                 <social.icon size={25} color='inherit'/> 
+               <a href='k' className='bg-blue-800 p-2 icon cursor-pointer hover:scale-105 hover:ease-in-out duration-100'>
+                 <LinkedIn size={25} color='inherit'/> 
               </a>
              </Rotate>
-            )
-          })}
+             <Rotate>
+               <a href='k' className='bg-blue-800 p-2 icon cursor-pointer hover:scale-105 hover:ease-in-out duration-100'>
+                 <GitHub size={25} color='inherit'/> 
+              </a>
+             </Rotate>
+             <Rotate>
+               <a href='k' className='bg-blue-800 p-2 icon cursor-pointer hover:scale-105 hover:ease-in-out duration-100'>
+                 <Mail size={25} color='inherit'/> 
+              </a>
+             </Rotate>
+             <Rotate>
+               <a href='k' className='bg-blue-800 p-2 icon cursor-pointer hover:scale-105 hover:ease-in-out duration-100'>
+                 <Facebook size={25} color='inherit'/> 
+              </a>
+             </Rotate>
+             <Rotate>
+               <a href='k' className='bg-blue-800 p-2 icon cursor-pointer hover:scale-105 hover:ease-in-out duration-100'>
+                 <Instagram size={25} color='inherit'/> 
+              </a>
+             </Rotate>
         </div>
         </Slide>
        </div>

@@ -26,7 +26,7 @@ const Project = () => {
         {
           text.map((t, i)=>(
           
-             <div className="flex  even:flex-row-reverse gap-2 sm:gap-5 ">
+             <div key={i} className="flex  even:flex-row-reverse gap-2 sm:gap-5 ">
             <div className="w-[50%]">
               <Slide direction={i % 2 === 1 ? 'left' : 'right'}>
               <img src={pic} alt="" className='w-full h-full  sm:w-[100%] object-cover' />
