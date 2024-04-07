@@ -20,7 +20,7 @@ const About = () => {
         <Slide direction='up'>
         <div className="bg-slate-300 h-[350px] dark:bg-[#25273C] text-slate-900 dark:text-slate-50 px-5 pb-7 pt-4 sm:h-[300px] transform transition ease-in-out hover:translate-y-[-10px]">
             <span>Education</span>
-            <div className="h-full text-xs sm:text-sm  flex justify-between py-4">
+            <div className="h-full text-base flex justify-between py-4">
             <div className="w-[10%]">
             <div className="flex flex-col justify-around h-full w-1 bg-slate-200">
                <div className='ml-[-8px] h-5 w-5 rounded-full bg-teal-500 border-2'></div>
