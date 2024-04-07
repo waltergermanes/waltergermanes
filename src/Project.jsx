@@ -10,17 +10,23 @@ const Project = () => {
       title: "Angels Peace Academy Online Learning Management System",
       img: noimage,
       desc: "This is my Capstone Project for affected students during the COVID19 pandemic, this website allows the teachers creates exams and assignments and allows students take exams and view. Built using PHP, JavaScript and Bootstrap 5",
-      lang: [`PHP`, `JavaScript`, `Bootstrap 5`]
+      lang: [`PHP`, `JavaScript`, `Bootstrap 5`],
+      link: ``,
+      repo: ``
     },{
       title: "FakebookSocial",
       img: fakebook,
       desc: "A social media app that allows users to connect other users. This website is a way to find and connect with friends and remain updated on their activities",
-      lang:[`ReactJS`, `ExpressJS`, `Tanstack Query`, `Socket IO`,`Material UI` ]
+      lang:[`ReactJS`, `ExpressJS`, `Tanstack Query`, `Socket IO`,`Material UI` ],
+      link: `https://fakebooksocial.netlify.app/login`,
+      repo: `https://github.com/waltergermanes/fakebook.git`
     },{
       title: "My Personal Portfolio",
       img: portfolio,
       desc: "A web portfolio to showcase my personal projects",
-      lang:[`ReactJS`, `Tailwind CSS`]
+      lang:[`ReactJS`, `Tailwind CSS`],
+      link: `https://waltergermanes.netlify.app/`,
+      repo: `https://github.com/waltergermanes/waltergermanes.git`
     }
 
   ]
@@ -51,10 +57,12 @@ const Project = () => {
                }
               </div>
               <span className='text-sm'>{project.desc}</span>
-              <div className="flex gap-2 mt-3">
-                <button className='w-full sm:w-[25%] bg-red-500 rounded-sm text-sm h-8'>Demo</button>
-                <button className='w-full sm:w-[25%] bg-teal-500 rounded-sm text-sm h-8'>View Code</button>
-              </div>
+             {
+              project.link !== `` &&  <div className="flex gap-2 mt-3">
+              <a href={project.link} target="_blank" className='grid place-content-center cursor-pointer w-full sm:w-[25%] bg-red-500 rounded-sm text-sm h-8'>Demo</a>
+              <a href={project.repo} target="_blank" className='w-full sm:w-[25%] bg-teal-500 rounded-sm text-sm h-8'>View Code</a>
+            </div>
+             }
             </div>
            
           </div>
