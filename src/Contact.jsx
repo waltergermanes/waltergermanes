@@ -18,7 +18,7 @@ const Contact = () => {
            </div>
            <div className="">
            <span className="text-lg font-bold">Contact no.:   </span>
-            <span className="">093992929  </span>
+            <span className="">09273379140  </span>
            </div>
            <div className="">
            <span className="text-lg font-bold">Email-Address:   </span>
