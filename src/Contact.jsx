@@ -37,7 +37,7 @@ const Contact = () => {
            <div className="">
            <textarea placeholder='Message...' className='text-black border bg-slate-400 outline-none placeholder:text-slate-300 placeholder:italic p-2 w-full' name="" id="" ></textarea>
            </div>
-                <button className='w-full sm:w-[25%] bg-blue-600 rounded-sm text-sm h-8'>Send</button>
+                <button disabled className='w-full sm:w-[25%] bg-blue-600 rounded-sm text-sm h-8'>Send</button>
             </div>
         </div>
     </div>

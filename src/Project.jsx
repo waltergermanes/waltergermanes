@@ -1,16 +1,27 @@
 import React from 'react'
 import { Slide, Zoom } from 'react-awesome-reveal'
+import fakebook from './assets/images/fakebook.png'
+import noimage from './assets/images/no-image.png'
+import portfolio from './assets/images/portfolio.png'
 
-import pic from './assets/images/sample.png'
 const Project = () => {
-  const text = [
+  const projects = [
     {
-      title: "title1",
-      desc: "desc1"
+      title: "Angels Peace Academy Online Learning Management System",
+      img: noimage,
+      desc: "This is my Capstone Project for affected students during the COVID19 pandemic, this website allows the teachers creates exams and assignments and allows students take exams and view. Built using PHP, JavaScript and Bootstrap 5",
+      lang: [`PHP`, `JavaScript`, `Bootstrap 5`]
     },{
-      title: "title2",
-      desc: "desc2"
-    },
+      title: "FakebookSocial",
+      img: fakebook,
+      desc: "A social media app that allows users to connect other users. This website is a way to find and connect with friends and remain updated on their activities",
+      lang:[`ReactJS`, `ExpressJS`, `Tanstack Query`, `Socket IO`,`Material UI` ]
+    },{
+      title: "My Personal Portfolio",
+      img: portfolio,
+      desc: "A web portfolio to showcase my personal projects",
+      lang:[`ReactJS`, `Tailwind CSS`]
+    }
 
   ]
   return (
@@ -24,23 +35,22 @@ const Project = () => {
       <div className="flex flex-col gap-20 pb-5">
 
         {
-          text.map((t, i)=>(
+          projects.map((project, i)=>(
           
              <div key={i} className="flex flex-col sm:odd:flex-row sm:even:flex-row-reverse gap-2 sm:gap-5 ">
             <div className="w-full sm:w-[50%]">
-              <img src={pic} alt="" className='w-full h-full  sm:w-[100%] object-cover' />
+              <img src={project?.img} alt="" className={`w-full ${project.title === `Angels Peace Academy Online Learning Management System` ? `h-[250px]` : `h-full`} sm:w-[100%] object-cover`}/>
                 </div>
             <div className="w-full sm:w-[50%] p-3">
-              <span className='text-sm sm:text-xl'>E-commerce Website</span>
+              <span className='text-sm sm:text-xl'>{project.title}</span>
               <div className=" flex flex-wrap gap-1 sm:gap-2 text-xs sm:text-sm mt-2">
-                <span className='bg-transparent border p-1 rounded-sm'>React</span>
-                <span className='bg-transparent border p-1 rounded-sm'>Redux Toolkit</span>
-                <span className='bg-transparent border p-1 rounded-sm'>NodeJS</span>
-                <span className='bg-transparent border p-1 rounded-sm'>ExpressJS</span>
-                <span className='bg-transparent border p-1 rounded-sm'>MySql</span>
-                <span className='bg-transparent border p-1 rounded-sm'>Sequelize</span>
+               {
+                project.lang.map((lang, i)=>(
+                  <span className='bg-transparent border p-1 rounded-sm'>{lang}</span>
+                ))
+               }
               </div>
-              <span className='text-sm'>Description</span>
+              <span className='text-sm'>{project.desc}</span>
               <div className="flex gap-2 mt-3">
                 <button className='w-full sm:w-[25%] bg-red-500 rounded-sm text-sm h-8'>Demo</button>
                 <button className='w-full sm:w-[25%] bg-teal-500 rounded-sm text-sm h-8'>View Code</button>
