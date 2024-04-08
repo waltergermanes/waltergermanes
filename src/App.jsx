@@ -12,6 +12,10 @@ import { Slide } from 'react-awesome-reveal'
 function App() {
   const [open, setOpen] = useState(false)
   const [darkMode, setDarkMode] = useState(true)
+  function handleClick()
+{
+     window.open("https://drive.google.com/file/d/1YzXD_O9ywQDqn2es5E6c2UhCgCu2Va5H/view?usp=drive_link","_blank");
+}
   return (
     <div id='home' className={darkMode ? 'dark scroll-smooth' : ' scroll-smooth'}>
      <div className="bg-slate-100 text-slate-950 dark:text-gray-200 dark:bg-[#25273C] ">
@@ -24,7 +28,7 @@ function App() {
             <li ><a href='#contact'>Contact</a></li>
             <li className='cursor-pointer' onClick={() => setDarkMode(!darkMode)}>{darkMode ? <LightMode/> : <NightsStay/>}</li>
             <li>
-              <a href="https://waltergermanes.netlify.app/assets/WALTER_GERMANES-RESUME_.pdf" target="_blank" className='bg-gradient-to-r from-cyan-500 to-teal-700 px-3 py-2 cursor-pointer rounded-md text-white'>Resume</a>
+              <a onClick={handleClick} className='bg-gradient-to-r from-cyan-500 to-teal-700 px-3 py-2 cursor-pointer rounded-md text-white'>Resume</a>
             </li>
           </ul>
         {
