@@ -60,7 +60,7 @@ const Project = () => {
              {
               project.link !== `` &&  <div className="flex gap-2 mt-3">
               <a href={project.link} target="_blank" className='grid place-content-center cursor-pointer w-full sm:w-[25%] bg-red-500 rounded-sm text-sm h-8'>Demo</a>
-              <a href={project.repo} target="_blank" className='w-full sm:w-[25%] bg-teal-500 rounded-sm text-sm h-8'>View Code</a>
+              <a href={project.repo} target="_blank" className='grid place-content-center w-full sm:w-[25%] bg-teal-500 rounded-sm text-sm h-8'>View Code</a>
             </div>
              }
             </div>

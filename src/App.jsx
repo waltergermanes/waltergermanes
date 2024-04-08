@@ -24,7 +24,7 @@ function App() {
             <li ><a href='#contact'>Contact</a></li>
             <li className='cursor-pointer' onClick={() => setDarkMode(!darkMode)}>{darkMode ? <LightMode/> : <NightsStay/>}</li>
             <li>
-              <a href="f" className='bg-gradient-to-r from-cyan-500 to-teal-700 px-3 py-2 cursor-pointer rounded-md text-white'>Resume</a>
+              <a href="https://waltergermanes.netlify.app/assets/WALTER_GERMANES-RESUME_.pdf" target="_blank" className='bg-gradient-to-r from-cyan-500 to-teal-700 px-3 py-2 cursor-pointer rounded-md text-white'>Resume</a>
             </li>
           </ul>
         {
