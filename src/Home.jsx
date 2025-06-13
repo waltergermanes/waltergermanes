@@ -1,6 +1,6 @@
 import React from 'react'
 import Typed from 'react-typed'
-import pic from './assets/images/FB_IMG_1682461166590.jpg'
+import pic from './assets/images/image.png'
 import { Rotate, Slide } from 'react-awesome-reveal'
 import { Facebook, GitHub, Instagram, LinkedIn, Mail } from '@mui/icons-material'
 
