@@ -24,8 +24,7 @@ const Home= () => {
                 </Typed>
                
         <span className='leading-6 text-base '> I'm a Full Stack Developer specializing building 
-        web apps, I enjoy building everything from small websites to rich interactive web apps.
-        Besides from Web Development, I also passionate to create realistic portraits
+        web apps, I specialize in creating scalable, responsive, and performance-driven applications, and have worked on both frontend and backend development. I'm passionate about clean code, modern web practices, and continuous learning to stay updated with the latest technologies.
         </span>
       
         <div className=' flex w-50 gap-5 '>
